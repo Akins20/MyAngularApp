@@ -1,0 +1,451 @@
+body {
+  color: black;
+  font-family: sans-serif;
+  background-color: aliceblue;
+  background: linear-gradient(rgb(240, 248, 255), rgb(64, 78, 90));
+}
+
+.footer {
+  background: rgb(64, 78, 90);
+  height: 150px;
+  overflow: hidden;
+}
+
+.bd {
+  background-color: aliceblue;
+  animation: bd 4s 1s forwards;
+  background: linear-gradient(rgb(240, 248, 255), rgb(64, 78, 90));
+}
+
+.control {
+  width: 250px;
+  line-height: 30px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.control:focus {
+  box-shadow: 2px 2px 2px grey;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: aliceblue;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 35%;
+  animation: modal 1s forwards ease-in;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    top: -300px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes bd {
+  from {
+    background-color: aliceblue;
+  }
+
+  to {
+    background-color: #717171;
+  }
+}
+
+.btn {
+  width: 70px;
+  line-height: 20px;
+}
+
+.btn2 {
+  width: 200px;
+  line-height: 30px;
+  margin-bottom: 93px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+#o1 {
+  position: absolute;
+  left: 10px;
+  animation: o1 4s 1s forwards;
+}
+
+#o3 {
+  position: absolute;
+  right: 50px;
+  animation: o3 4s 2.5s forwards;
+}
+
+@keyframes o1 {
+  from {
+    left: 10px;
+  }
+
+  to {
+    left: 520px;
+  }
+}
+
+@keyframes o3 {
+  from {
+    right: 50px;
+  }
+
+  to {
+    right: 523px;
+  }
+}
+
+.column {
+  float: left;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.main {
+  width: 75%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
+
+.contain {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.bar {
+  width: 400px;
+  background-color: antiquewhite;
+}
+
+.htm {
+  width: 0%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: htm 4s 5s forwards;
+}
+
+@keyframes htm {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 85%;
+    background-color: black;
+  }
+}
+
+.css {
+  width: 0%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: css 4s 5s forwards;
+}
+
+@keyframes css {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 75%;
+    background-color: black;
+  }
+}
+
+.javascript {
+  width: 0%;
+  counter-reset: my-counter;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: javascript 4s 5s forwards;
+}
+
+.typescript {
+  width: 0%;
+  counter-reset: my-counter;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: typescript 4s 5s forwards;
+}
+
+.bootstrap {
+  width: 0%;
+  counter-reset: my-counter;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: bootstrap 4s 5s forwards;
+}
+
+.jQuery {
+  width: 0%;
+  counter-reset: my-counter;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 4px;
+  animation: jquery 4s 5s forwards;
+}
+
+@keyframes typescript {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 60%;
+    background-color: black;
+  }
+}
+
+@keyframes jquery {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 30%;
+    background-color: black;
+  }
+}
+
+@keyframes bootstrap {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 60%;
+    background-color: black;
+  }
+}
+
+@keyframes javascript {
+  from {
+    width: 0%;
+    background-color: grey;
+  }
+
+  to {
+    width: 70%;
+    background-color: black;
+  }
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 10px;
+  padding-right: 10px;
+}
+
+img {
+  border-radius: 180px;
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+#mySkill {
+  width: 80%;
+  background-color: antiquewhite;
+  border-radius: 20px;
+}
