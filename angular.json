@@ -27,7 +27,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "main.9bc8398618d3d567.js",
+              "polyfills.e664431954d0d181.js",
+              "runtime.d686b090f09c70ce.js"
+            ]
           },
           "configurations": {
             "production": {
